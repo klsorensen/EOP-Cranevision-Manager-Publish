@@ -1,0 +1,11 @@
+[Unit]
+Description=Init VC-Z Camera
+After=network.target
+
+[Service]
+Type=exec
+ExecStart=/etc/vcinit/vcinit.sh
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
